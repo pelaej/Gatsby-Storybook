@@ -1,0 +1,35 @@
+/*
+
+	AvenirLTPro:
+	400, 500, 900
+	
+	DIN 2014:
+	300, 400, 700
+	
+	Ostrich Proper:
+	600
+	
+	Ostrich Proper Inline
+	400
+
+*/
+
+.section-title {
+	margin: 0 0 32px;
+	text-align: center;
+	&--left {
+		text-align: left;
+	}
+}
+	
+.title-entity {
+	font-family: $din-2014 !important;
+	vertical-align: top;
+	color: $white;
+}
+	
+.body-small {
+	font-size: 14px;
+	letter-spacing: 0.1px;
+	line-height: 1.71;
+}

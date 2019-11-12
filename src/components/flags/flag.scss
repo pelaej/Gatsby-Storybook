@@ -1,0 +1,50 @@
+@import url('https://use.typekit.net/kge7zav.css');
+@import '../../css/helper/variables';
+
+.flag {
+  color: $white;
+  display: inline-block;
+  font-family: $din-2014;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 1;
+  min-width: 128px;
+  padding: 10px 12px;
+  text-align: center;
+  text-transform: uppercase;
+  &--orange,
+  &--yellow,
+  &--white {
+    color: $black;
+  }
+  &--red {
+    background-color: $secondary-red;
+  }
+  &--orange {
+    background-color: $secondary-orange;
+  }
+  &--yellow {
+    background-color: $secondary-yellow;
+  }
+  &--green {
+    background-color: $secondary-green;
+  }
+  &--cyan {
+    background-color: $secondary-cyan;
+  }
+  &--blue {
+    background-color: $secondary-blue;
+  }
+  &--magenta {
+    background-color: $secondary-magenta;
+  }
+  &--purple {
+    background-color: $secondary-purple;
+  }
+  &--gray {
+    background-color: $body-gray;
+  }
+  &--white {
+    background-color: $white;
+  }
+}

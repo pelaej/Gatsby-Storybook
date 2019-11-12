@@ -1,0 +1,102 @@
+
+@import url('https://use.typekit.net/kge7zav.css');
+@import '../../css/helper/variables';
+
+.product-setcard {
+  background-color: $white;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  font-family: $din-2014;
+  max-width: 330px;
+  &__img {
+    background-color: $light-gray;
+    position: relative;
+    .flag {
+      left: -12px;
+      position: absolute;
+      top: 48px;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100%;
+    padding: 24px;
+    p {
+      color: $body-gray;
+      font-size: 14px;
+      line-height: 1.71;
+      margin: 0 0 12px;
+    }
+    &-head {
+      margin-bottom: 4px;
+      h4 {
+        margin: 0;
+        a {
+          color: $black
+        }
+      }
+      h6 {
+        color: $body-gray;
+        margin: 0 0 10px;
+      }
+    }
+    &-foot {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: auto;
+      padding-top: 1rem;
+      @media (min-width:901px) and (max-width: 965px) {
+        flex-direction: column;
+      }
+      @media (max-width: 665px) {
+        flex-direction: column;
+      }
+      & > * {
+        align-self: flex-end;
+        flex-grow: 1;
+        &:nth-child(2) {
+          margin-top: 10px;
+          @media (min-width:901px) and (max-width: 965px) {
+            width: 100%;
+          }
+          @media (max-width: 665px) {
+            width: 100%;
+          }
+        }
+      }
+      button {
+        min-width: auto !important;
+      }
+    }
+    &-price {
+      font-size: 12px;
+      margin-right: 10px;
+      text-transform: uppercase;
+      span {
+        color: bodyGray;
+        font-size: 40px;
+        font-weight: 300;
+        @media (min-width: 967px) and (max-width: 1100px) {
+          font-size: 35px;
+        }
+        @media (min-width: 601px) and (max-width: 700px) {
+          font-size: 35px;
+        }
+      }
+      @media (min-width: 901px) and (max-width: 966px) {
+        margin: 0;
+        width: 100%;
+      }
+      @media (max-width: 665px) {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+}

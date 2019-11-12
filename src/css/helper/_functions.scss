@@ -1,0 +1,4 @@
+// calculates size in percent
+@function size-percent($a, $b) {
+	@return ($a/$b)*100%;
+}
