@@ -1,0 +1,7 @@
+{
+  "authToken": "BkxeS9wiH",
+  "dsmHost": "shure.invisionapp.com",
+  "organization": "shure-global-web-team",
+  "outputDir": ".dsm",
+  "storyPath": "src/components/**/*.stories.js"
+}

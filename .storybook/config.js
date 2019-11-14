@@ -1,10 +1,18 @@
-import { configure, addDecorator } from "@storybook/react";
+import { configure, addDecorator, addParameters } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { withKnobs } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
+import { initDsm } from '@invisionapp/dsm-storybook';
 
 addDecorator(withKnobs);
 addDecorator(withA11y);
+
+//Init Dsm
+initDsm({
+  addDecorator,
+  addParameters,
+  callback: () => configure(loadStories, module)
+});
 
 // automatically import all files ending in *.stories.js
 const req = require.context("../src/components", true, /.stories.js$/)
