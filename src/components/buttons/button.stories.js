@@ -18,10 +18,14 @@ const options = {
 };
 
 storiesOf('Components|Atoms/Buttons', module)
-  .add('default', () => {
-    return (
+  .add('default', () => (
       <div style={bgSpacing}>
         <Button text={text('Label', 'Add to Cart')} styles={select('Type', options)} />
       </div>
-    )
-  });
+    ),
+    {
+      'in-dsm': {
+        id: '5dcc4fae2cea662481457118'
+      }
+    }
+  );
