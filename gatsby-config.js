@@ -31,7 +31,18 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/icons/favicon.png`, // This path is relative to the root of the site.
       },
-    }
+    },
+    {
+      resolve: "gatsby-source-pim",
+      options: {
+        query: `/microphones/sm58`,
+        url: `${process.env.PIM_API_URL}`,
+        headers: {
+          Accept: `application/vnd.shureeu.v1+json`,
+          AcceptLanguage: `en-US`
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
